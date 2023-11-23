@@ -1,0 +1,221 @@
+@media all {   /*Mobile frist*/
+
+  /*Geral*/
+  *{
+    margin: 0%;
+    padding: 0%;
+  }
+
+  html{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  ::-webkit-scrollbar{
+    width: 0%;
+    height: 0%;
+  }
+
+  body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #124040;
+  }
+
+  /*header*/
+
+  header{
+    background-color:#A64724 ;
+  }
+
+  ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 30px;
+    padding: 20px 10px 20px 0px;
+  }
+
+  ul a{
+    text-decoration: none;
+    color:#401713;
+  }
+
+  ul a:hover{
+    color: #03A688;
+  }
+
+
+  /*main*/
+
+  /*sobre*/
+
+  #Sobre{
+    text-align: center;
+    height: 100vh;
+    background-image: url(./img/img\ capa.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .divsobre{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .divsobre h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color:rgb(199, 201, 101);
+  }
+
+  .divsobre p{
+    color:rgb(199, 201, 101);
+    font-size: 20px;
+  }
+
+  /*Projetos*/
+
+  /*titulo da parte sobre os projetos*/
+
+  .h1projetos{
+    background-color: #A64724;
+    color: #F2A950;
+    text-align: center;
+    font-size: 13px;
+    padding:30px 0px;
+  }
+
+  /*grid projetos*/
+
+  #Projetos{
+    background-color: #A64724;
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .divprojetos{
+    background-color: #401713;
+    border-radius: 10px;
+  }
+
+  .divprojetos a{
+    text-decoration: none;
+    color:#A64724;
+  }
+
+  .divprojetos a:hover{
+    color:#226161
+  }
+
+  .divprojetos img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  /*botão que direciona para mais projetos*/
+
+  .buttonprojetos{
+    background-color: #A64724;
+    text-align: center;
+    padding:40px 0px;
+  }
+
+  .buttonprojetos button{
+    background-color: #124040;
+    border: 2px solid #124040;
+    padding:8px;
+    border-radius: 10px;
+  }
+
+  .buttonprojetos button:hover{
+    background-color: #401713;
+    border: 2px solid #401713;
+    transform: translate(3px, 3px);
+    transition: transform 1s;
+  }
+
+  .buttonprojetos a{
+    text-decoration: none;
+    color:#03A688;
+  }
+
+  .buttonprojetos a:hover{
+    color:#F2A950;
+  }
+
+  /*contato*/
+
+  #Contato{
+    background-color:#03A688;
+    color:#124040;
+    text-align: center;
+    padding:40px 0px
+  }
+
+  #Contato p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  #Contato img{
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  #Contato img:hover{
+    transform: translate(-5px,-5px);
+    transition: transform 1s;
+  }
+
+  /*footer*/
+
+  footer{
+    padding:10px;
+    text-align: center;
+    color:rgb(206, 206, 206);
+  }
+
+  footer a{
+    text-decoration: none;
+    color:#F2A950;
+  }
+
+
+}
+
+@media (min-width:687px){
+
+   /*Projetos*/
+
+  #Projetos{
+    display: grid;
+    grid-template-columns: 300px 300px;
+  }
+
+  /*contato*/
+
+  #Contato div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+  }
+
+  #Contato>div p{
+    display: none;
+  }
+
+  #Contato img{
+    width: 40px;
+    border-radius: 50%;
+  }
+
+}
